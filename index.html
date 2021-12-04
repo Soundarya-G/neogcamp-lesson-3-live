@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Library</title>
+    <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
     <h1>Welcome to Soundarya's Component Library</h1>
-    <p>I am attending neog.camp and I want to make a library 
+    <p>I am attending neog.camp and I want to make a library
         component which would make all my projects look and connsistent</p>
-    
+
     <hr>
 
     <h2>@Typography</h2>
@@ -24,19 +27,19 @@
 
 
     <h2>@Containers</h2>
-    
+
     <h3>fluid container</h3>
-    <div>This is a fluid container and it will go till the end of the page</div>
-    
+    <div class="container">This is a fluid container and it will go till the end of the page</div>
+
     <h3>center container</h3>
-    <div>This is a centered container and it will go till specified width</div>
-    
+    <div class="container container-center">This is a centered container and it will go till specified width</div>
+
     <hr>
 
     <h2>@links</h2>
 
-    <a href="/">Primary link</a>
-    <a href="/">Secondary link</a>
+    <a class="link link-primary" href="/">Primary link</a>
+    <a class="link link-secondary" href="/">Secondary link</a>
 
     <hr>
 
@@ -44,7 +47,7 @@
 
     <h3>unordered list</h3>
 
-    <ul>
+    <ul class="list-non-bullet">
         <li>Item One</li>
         <li>Item Two</li>
         <li>Item Three</li>
@@ -52,15 +55,15 @@
 
     <h3>unordred inline list</h3>
 
-    <ul>
-        <li>Inline item one</li>
-        <li>Inline item two</li>
-        <li>Inline item three</li>
+    <ul class="list-non-bullet">
+        <li class="list-item-inline">Inline item one</li>
+        <li class="list-item-inline">Inline item two</li>
+        <li class="list-item-inline">Inline item three</li>
     </ul>
 
     <h3>reverse ordered list</h3>
 
-    <ol>
+    <ol reversed>
         <li>milk</li>
         <li>eggs</li>
         <li>bread</li>
@@ -70,17 +73,17 @@
 
     <h2>@nav</h2>
 
-    <nav>
-        <div>IAMDeveloper</div>
-        <ul>
-            <li>
-                <a href="/">Home</a>
+    <nav class="navigation container">
+        <div class="nav-brand">IAMDeveloper</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link link-active" href="/">Home</a>
             </li>
-            <li>
-                <a href="/">products</a>
+            <li class="list-item-inline">
+                <a class="link" href="/">products</a>
             </li>
-            <li>
-                <a href="/">about</a>
+            <li class="list-item-inline">
+                <a class="link" href="/">about</a>
             </li>
         </ul>
     </nav>
@@ -89,38 +92,60 @@
 
     <h3>@header</h3>
 
-    <header>
-        <img src="images/portfolio.svg" >
-        <h1>Heading inside hero</h1>
+    <header class="hero">
+        <img class="hero-img" src="images/portfolio.svg">
+        <h1 class="hero-heading">Soundarya the <span style="color: #6B7280;">Web Developer</span></h1>
     </header>
 
     <hr>
 
     <h2>@section</h2>
-    
-    
-    <section>
-        <h3>@white section</h3>
-        <p>This will have white background</p>
+
+
+    <section class="section">
+        <div class="container container-center">
+            <h1>@white section</h3>
+                <p>Firefox 93 comes with lots of lovely updates
+                    including AVIF image format support, filling
+                    of XFA-based forms in its PDF viewer and protection
+                    against insecure downloads by blocking downloads relying
+                    on insecure connections.The post Lots to see in Firefox 93!
+                    appeared first on Mozilla Hacks - the Web developer blog.
+                </p>
+        </div>
     </section>
 
-    <section>
-        <h3>@off white section</h3>
-        <p>This will have gray background</p>
+
+    <section class="section ow">
+        <div class="container container-center">
+            <h1>@off white section</h3>
+                <p>Firefox 93 comes with lots of lovely updates
+                    including AVIF image format support, filling
+                    of XFA-based forms in its PDF viewer and protection
+                    against insecure downloads by blocking downloads relying
+                    on insecure connections.The post Lots to see in Firefox 93!
+                    appeared first on Mozilla Hacks - the Web developer blog.
+                </p>
+
+        </div>
     </section>
 
     <hr>
 
     <h2>@footer</h2>
 
-    <footer>
-        <div>Some small heading inside footer</div>
-        <ul>
-            <li>social one</li>
-            <li>social two</li>
-            <li>socila three</li>
+    <footer class="footer">
+        <div class="footer-header">Some small heading inside footer</div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline"><a class="link" href="/">socialone</a>
+            </li>
+            <li class="list-item-inline"> <a class="link" href="/">socialtwo</a>
+            </li>
+            <li class="list-item-inline"> <a class="link" href="/">socilathree</a>
+            </li>
         </ul>
     </footer>
 
 </body>
+
 </html>
